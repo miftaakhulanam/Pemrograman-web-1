@@ -1,0 +1,2200 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>InTravel</title>
+    <script src="script.js"></script>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        border: none;
+      }
+      html {
+        scroll-behavior: smooth;
+        position: relative;
+      }
+      #InTravel {
+        position: absolute;
+        width: 1350px;
+        height: 4166px;
+        background-color: rgba(255, 255, 255, 1);
+        overflow: hidden;
+        left: -30px;
+      }
+      .navbar {
+        position: fixed;
+        z-index: 99;
+      }
+      .menu span a {
+        text-decoration: none;
+        color: #fff;
+      }
+      .menu #Home_dz span a:hover,
+      #Partner_d span a:hover,
+      #Tours_d span a:hover,
+      #About_d span a:hover,
+      #Contact_d span a:hover {
+        color: #cbcbcb;
+        transition: all 0.3s ease-out;
+      }
+      .button-log #Login span {
+        color: rgba(82, 199, 223, 1);
+        cursor: pointer;
+      }
+      #Rectangle_1 {
+        fill: rgba(9, 176, 210, 0.702);
+      }
+      .Rectangle_1 {
+        position: absolute;
+        overflow: visible;
+        width: 1368px;
+        height: 844px;
+        left: -18px;
+        top: -23px;
+      }
+      #Rectangle_3 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_3 {
+        filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 242px;
+        height: 83px;
+        left: 142px;
+        top: 463px;
+      }
+      #Percayakan_Liburanmu_Ke_InTrav {
+        left: 141px;
+        top: 199px;
+        position: absolute;
+        overflow: visible;
+        width: 559px;
+        white-space: nowrap;
+        line-height: 56px;
+        margin-top: -3.5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 49px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Dengan_InTravel_liburanmu_akan {
+        left: 141px;
+        top: 360px;
+        position: absolute;
+        overflow: visible;
+        width: 610px;
+        white-space: nowrap;
+        line-height: 33px;
+        margin-top: -6.5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Find_Ticket {
+        left: 171px;
+        top: 472px;
+        position: absolute;
+        overflow: visible;
+        width: 126px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: rgba(82, 199, 223, 1);
+      }
+      .ticket-button:hover #Rectangle_3 {
+        fill: rgb(188, 188, 188);
+        transition: all 0.3s ease-out;
+      }
+      #uiyt {
+        position: absolute;
+        width: 101px;
+        height: 48px;
+        left: 837px;
+        top: 159px;
+        overflow: visible;
+      }
+      #khgfhj {
+        position: absolute;
+        width: 173px;
+        height: 41px;
+        left: 822px;
+        top: 388px;
+        overflow: visible;
+      }
+      #klg {
+        position: absolute;
+        width: 156px;
+        height: 74px;
+        left: 681px;
+        top: 575px;
+        overflow: visible;
+      }
+      #Human {
+        position: absolute;
+        width: 389px;
+        height: 713px;
+        left: 837px;
+        top: 183px;
+        overflow: visible;
+      }
+      #iutd {
+        position: absolute;
+        width: 93px;
+        height: 34px;
+        left: 744px;
+        top: 379px;
+        overflow: visible;
+      }
+      #iutd_q {
+        position: absolute;
+        width: 92px;
+        height: 34px;
+        left: 919px;
+        top: 703px;
+        overflow: visible;
+      }
+      #wave {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .wave {
+        overflow: visible;
+        position: absolute;
+        width: 1368.707px;
+        height: 287.754px;
+        left: -18.664px;
+        top: 728.185px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #wave_s {
+        fill: rgba(239, 239, 239, 1);
+      }
+      .wave_s {
+        overflow: visible;
+        position: absolute;
+        width: 1368.707px;
+        height: 287.754px;
+        left: -18.664px;
+        top: 3675.391px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #About_Us {
+        left: 605px;
+        top: 821px;
+        position: absolute;
+        overflow: visible;
+        width: 142px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Tourist_Attraction {
+        left: 541px;
+        top: 2590px;
+        position: absolute;
+        overflow: visible;
+        width: 276px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Biro_Perjalanan_Terbaik {
+        left: 443px;
+        top: 1124px;
+        position: absolute;
+        overflow: visible;
+        width: 319px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Cakupan_Global {
+        left: 443px;
+        top: 1681px;
+        position: absolute;
+        overflow: visible;
+        width: 224px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Harga_Bersaing {
+        left: 494px;
+        top: 1390px;
+        position: absolute;
+        overflow: visible;
+        width: 214px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Kami_merupakan_agen_travel_yan {
+        left: 45px;
+        top: 883px;
+        position: absolute;
+        overflow: visible;
+        width: 1261px;
+        white-space: nowrap;
+        line-height: 29px;
+        margin-top: -5px;
+        text-align: center;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #ab1 {
+        position: absolute;
+        width: 238px;
+        height: 324px;
+        left: 143px;
+        top: 998px;
+        overflow: visible;
+      }
+      #ab2 {
+        position: absolute;
+        width: 439px;
+        height: 293px;
+        left: 768px;
+        top: 1303px;
+        overflow: visible;
+      }
+      #ab3 {
+        position: absolute;
+        width: 255px;
+        height: 282px;
+        left: 143px;
+        top: 1572px;
+        overflow: visible;
+      }
+      #Kami_berkeinginan_menjadi_peny {
+        left: 444px;
+        top: 1195px;
+        position: absolute;
+        overflow: visible;
+        width: 591px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Path_1 {
+        fill: rgba(143, 143, 143, 0.141);
+      }
+      .Path_1 {
+        overflow: visible;
+        position: absolute;
+        width: 1368.707px;
+        height: 542.165px;
+        left: -18.664px;
+        top: 1977.338px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Terdapat_banyak_atraksi_wisata {
+        left: 443px;
+        top: 1741px;
+        position: absolute;
+        overflow: visible;
+        width: 576px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Nikmati_perjalanan_anda_tanpa_ {
+        left: 237px;
+        top: 1456px;
+        position: absolute;
+        overflow: visible;
+        width: 471px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 19px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Partner_Us {
+        left: 595px;
+        top: 2023px;
+        position: absolute;
+        overflow: visible;
+        width: 163px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 31px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #LOGO_BATIK_AIR {
+        position: absolute;
+        width: 224px;
+        height: 61px;
+        left: 143px;
+        top: 2142px;
+        overflow: visible;
+      }
+      #Jetstar_Logosvg {
+        position: absolute;
+        width: 190px;
+        height: 66px;
+        left: 459px;
+        top: 2142px;
+        overflow: visible;
+      }
+      #Logo_Thai_Lion_Air {
+        position: absolute;
+        width: 120px;
+        height: 109px;
+        left: 778px;
+        top: 2119px;
+        overflow: visible;
+      }
+      #n_40px-2012_Citilink_Logosvg {
+        position: absolute;
+        width: 244px;
+        height: 61px;
+        left: 706px;
+        top: 2341px;
+        overflow: visible;
+      }
+      #n_106716434a7e50004330e5b {
+        position: absolute;
+        width: 247px;
+        height: 165px;
+        left: 414px;
+        top: 2287px;
+        overflow: visible;
+      }
+      #logoSJ {
+        position: absolute;
+        width: 109px;
+        height: 87px;
+        left: 202px;
+        top: 2327px;
+        overflow: visible;
+      }
+      #Line_3 {
+        fill: transparent;
+        stroke: rgba(82, 199, 223, 1);
+        stroke-width: 4px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+      }
+      .Line_3 {
+        overflow: visible;
+        position: absolute;
+        width: 240.235px;
+        height: 4px;
+        left: 443.265px;
+        top: 1169.866px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Line_4 {
+        fill: transparent;
+        stroke: rgba(82, 199, 223, 1);
+        stroke-width: 4px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+      }
+      .Line_4 {
+        overflow: visible;
+        position: absolute;
+        width: 186.228px;
+        height: 4px;
+        left: 521.078px;
+        top: 1436.053px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Line_5 {
+        fill: transparent;
+        stroke: rgba(82, 199, 223, 1);
+        stroke-width: 4px;
+        stroke-linejoin: miter;
+        stroke-linecap: butt;
+        stroke-miterlimit: 4;
+        shape-rendering: auto;
+      }
+      .Line_5 {
+        overflow: visible;
+        position: absolute;
+        width: 181.34px;
+        height: 4px;
+        left: 443.16px;
+        top: 1722.616px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Rectangle_4 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_4 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 302px;
+        height: 389px;
+        left: 89px;
+        top: 2691px;
+      }
+      .card-4:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_5 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_5 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 302px;
+        height: 389px;
+        left: 384px;
+        top: 2691px;
+      }
+      .card-5:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_6 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_6 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 303px;
+        height: 389px;
+        left: 679px;
+        top: 2691px;
+      }
+      .card-6:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_9 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_9 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 303px;
+        height: 388px;
+        left: 679px;
+        top: 3106px;
+      }
+      .card-9:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_10 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_10 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 302px;
+        height: 388px;
+        left: 384px;
+        top: 3106px;
+      }
+      .card-10:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_11 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_11 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 302px;
+        height: 388px;
+        left: 89px;
+        top: 3106px;
+      }
+      .card-11:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #n_1c4194dcf8640629fd223927c0ce {
+        position: absolute;
+        width: 279px;
+        height: 280px;
+        left: 91px;
+        top: 2695px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_bn {
+        position: absolute;
+        width: 279px;
+        height: 280px;
+        left: 386px;
+        top: 2695px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_bo {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        left: 681px;
+        top: 2695px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_bp {
+        position: absolute;
+        width: 280px;
+        height: 279px;
+        left: 681px;
+        top: 3110px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_bq {
+        position: absolute;
+        width: 279px;
+        height: 279px;
+        left: 386px;
+        top: 3110px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_br {
+        position: absolute;
+        width: 279px;
+        height: 279px;
+        left: 91px;
+        top: 3110px;
+        overflow: visible;
+      }
+      #Lembah_Harau {
+        left: 107px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 127px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Pulau_Komodo {
+        left: 402px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 125px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Danau_Toba {
+        left: 697px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 99px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Candi_Borobudur {
+        left: 697px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 146px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Pulau_Cubadak {
+        left: 402px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 132px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Pantai_Tanjung_Tinggi {
+        left: 103px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 185px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8 {
+        left: 327px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_bz {
+        left: 622px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_b {
+        left: 917px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_ca {
+        left: 917px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_cb {
+        left: 622px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_cc {
+        left: 327px;
+        top: 3403px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Rp_800000 {
+        left: 107px;
+        top: 3018px;
+        position: absolute;
+        overflow: visible;
+        width: 81px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_1000000 {
+        left: 402px;
+        top: 3018px;
+        position: absolute;
+        overflow: visible;
+        width: 89px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_600000 {
+        left: 697px;
+        top: 3018px;
+        position: absolute;
+        overflow: visible;
+        width: 81px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_900000 {
+        left: 697px;
+        top: 3433px;
+        position: absolute;
+        overflow: visible;
+        width: 81px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_600000_b {
+        left: 402px;
+        top: 3433px;
+        position: absolute;
+        overflow: visible;
+        width: 81px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_700000 {
+        left: 103px;
+        top: 3433px;
+        position: absolute;
+        overflow: visible;
+        width: 80px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #More {
+        left: 285px;
+        top: 3016px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_cb {
+        left: 580px;
+        top: 3016px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_cc {
+        left: 875px;
+        top: 3016px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_cd {
+        left: 875px;
+        top: 3431px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_ce {
+        left: 580px;
+        top: 3431px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_cf {
+        left: 285px;
+        top: 3431px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Icon_awesome-star {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 300.147px;
+        top: 2991.253px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_ch {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_ch {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 595.275px;
+        top: 2991.253px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_ci {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_ci {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 890.402px;
+        top: 2991.253px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_cj {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_cj {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 890.402px;
+        top: 3406.143px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_ck {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_ck {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 595.275px;
+        top: 3406.143px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_cl {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_cl {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 300.147px;
+        top: 3406.143px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_ionic-ios-arrow-forward {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_ionic-ios-arrow-forward {
+        overflow: visible;
+        position: absolute;
+        width: 10.584px;
+        height: 18.511px;
+        left: 311.303px;
+        top: 482.108px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 336.996px;
+        top: 3020.712px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_co {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_co {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 632.123px;
+        top: 3020.712px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_cp {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_cp {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 927.251px;
+        top: 3020.712px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_cq {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_cq {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 927.251px;
+        top: 3435.602px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_cr {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_cr {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 632.123px;
+        top: 3435.602px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_cs {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_cs {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 336.996px;
+        top: 3435.602px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Rectangle_3_ct {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Rectangle_3_ct {
+        filter: drop-shadow(3px 3px 10px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 242px;
+        height: 85px;
+        left: 560px;
+        top: 3545px;
+      }
+      #View_All {
+        left: 621px;
+        top: 3555px;
+        position: absolute;
+        overflow: visible;
+        width: 92px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Rectangle_12 {
+        fill: rgba(239, 239, 239, 1);
+      }
+      .Rectangle_12 {
+        position: absolute;
+        overflow: visible;
+        width: 1368px;
+        height: 270px;
+        left: -18px;
+        top: 3939px;
+      }
+      #InTravel_cw {
+        left: 123px;
+        top: 3783px;
+        position: absolute;
+        overflow: visible;
+        width: 125px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 31px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Contact {
+        left: 519px;
+        top: 3783px;
+        position: absolute;
+        overflow: visible;
+        width: 128px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 31px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Social {
+        left: 912px;
+        top: 3783px;
+        position: absolute;
+        overflow: visible;
+        width: 95px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 31px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Home {
+        left: 123px;
+        top: 3848px;
+        position: absolute;
+        overflow: visible;
+        width: 64px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #intravelofficialgmailcom_Jl_KH {
+        left: 519px;
+        top: 3848px;
+        position: absolute;
+        overflow: visible;
+        width: 269px;
+        white-space: nowrap;
+        line-height: 37px;
+        margin-top: -8.5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Facebook__InTravel_Twitter____ {
+        left: 912px;
+        top: 3848px;
+        position: absolute;
+        overflow: visible;
+        width: 317px;
+        white-space: nowrap;
+        line-height: 37px;
+        margin-top: -8.5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #About {
+        left: 123px;
+        top: 3883px;
+        position: absolute;
+        overflow: visible;
+        width: 64px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Partner {
+        left: 123px;
+        top: 3923px;
+        position: absolute;
+        overflow: visible;
+        width: 77px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Tours {
+        left: 123px;
+        top: 3962px;
+        position: absolute;
+        overflow: visible;
+        width: 58px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Contact_c {
+        left: 123px;
+        top: 4003px;
+        position: absolute;
+        overflow: visible;
+        width: 82px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #n_2023_InTravel_All_rights_Res {
+        left: 499px;
+        top: 4098px;
+        position: absolute;
+        overflow: visible;
+        width: 353px;
+        white-space: nowrap;
+        line-height: 37px;
+        margin-top: -8.5px;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 20px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Path_2 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Path_2 {
+        overflow: visible;
+        position: absolute;
+        width: 1368.707px;
+        height: 17.556px;
+        left: -18.664px;
+        top: 1907.743px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Path_3 {
+        fill: rgba(239, 239, 239, 1);
+      }
+      .Path_3 {
+        overflow: visible;
+        position: absolute;
+        width: 1368.707px;
+        height: 23.972px;
+        left: -18.664px;
+        top: 2495.531px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #pesawat {
+        position: absolute;
+        width: 103px;
+        height: 96px;
+        left: 1216px;
+        top: 135px;
+        overflow: visible;
+      }
+      #Untitled-1 {
+        position: absolute;
+        width: 270px;
+        height: 120px;
+        left: 999px;
+        top: 553px;
+        overflow: visible;
+      }
+      #sss {
+        position: absolute;
+        width: 136px;
+        height: 68px;
+        left: 1251px;
+        top: 544px;
+        overflow: visible;
+      }
+      #klg_dc {
+        position: absolute;
+        width: 215px;
+        height: 102px;
+        left: 1226px;
+        top: 311px;
+        overflow: visible;
+      }
+      #uiyt_dd {
+        position: absolute;
+        width: 100px;
+        height: 48px;
+        left: 1086px;
+        top: 214px;
+        overflow: visible;
+      }
+      #khgfhj_de {
+        position: absolute;
+        width: 173px;
+        height: 41px;
+        left: 999px;
+        top: 706px;
+        overflow: visible;
+      }
+      #n_560px-Logo_PT_Kereta_Api_Ind {
+        position: absolute;
+        width: 148px;
+        height: 62px;
+        left: 1040px;
+        top: 2144px;
+        overflow: visible;
+      }
+      #Garuda_Indonesia {
+        position: absolute;
+        width: 180px;
+        height: 115px;
+        left: 1024px;
+        top: 2305px;
+        overflow: visible;
+      }
+      #Rectangle_7 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_7 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 303px;
+        height: 389px;
+        left: 974px;
+        top: 2691px;
+      }
+      .card-7:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #Rectangle_8 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .Rectangle_8 {
+        filter: drop-shadow(0px 3px 6px rgba(0, 0, 0, 0.161));
+        position: absolute;
+        overflow: visible;
+        width: 303px;
+        height: 388px;
+        left: 974px;
+        top: 3104px;
+      }
+      .card-8:hover {
+        filter: drop-shadow(0px 3px 6px rgba(0, 174, 255, 0.751));
+        transition: all 0.3s ease-out;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_dj {
+        position: absolute;
+        width: 280px;
+        height: 280px;
+        left: 976px;
+        top: 2695px;
+        overflow: visible;
+      }
+      #n_1c4194dcf8640629fd223927c0ce_dk {
+        position: absolute;
+        width: 280px;
+        height: 279px;
+        left: 976px;
+        top: 3108px;
+        overflow: visible;
+      }
+      #Pantai_Ora {
+        left: 992px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 91px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Raja_Ampat {
+        left: 992px;
+        top: 3401px;
+        position: absolute;
+        overflow: visible;
+        width: 95px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 16px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_dn {
+        left: 1212px;
+        top: 2988px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #n_8_do {
+        left: 1212px;
+        top: 3401px;
+        position: absolute;
+        overflow: visible;
+        width: 27px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 18px;
+        color: rgba(0, 0, 0, 1);
+      }
+      #Rp_700000_dp {
+        left: 992px;
+        top: 3018px;
+        position: absolute;
+        overflow: visible;
+        width: 80px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #Rp_1000000_dq {
+        left: 992px;
+        top: 3431px;
+        position: absolute;
+        overflow: visible;
+        width: 89px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 14px;
+        color: rgba(112, 112, 112, 1);
+      }
+      #More_dr {
+        left: 1170px;
+        top: 3016px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #More_ds {
+        left: 1170px;
+        top: 3429px;
+        position: absolute;
+        overflow: visible;
+        width: 43px;
+        white-space: nowrap;
+        text-align: right;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 17px;
+        color: rgba(82, 199, 223, 1);
+      }
+      #Icon_awesome-star_dt {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_dt {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 1185.53px;
+        top: 2991.253px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-star_du {
+        fill: rgba(255, 214, 0, 1);
+      }
+      .Icon_awesome-star_du {
+        overflow: visible;
+        position: absolute;
+        width: 19.658px;
+        height: 18.815px;
+        left: 1185.53px;
+        top: 3404.004px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_dv {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_dv {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 1222.378px;
+        top: 3020.712px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Icon_awesome-arrow-right_dw {
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Icon_awesome-arrow-right_dw {
+        overflow: visible;
+        position: absolute;
+        width: 15.904px;
+        height: 15.501px;
+        left: 1222.378px;
+        top: 3433.463px;
+        transform: matrix(1, 0, 0, 1, 0, 0);
+      }
+      #Rectangle_13 {
+        filter: blur(12px);
+        fill: rgba(82, 199, 223, 1);
+      }
+      .Rectangle_13 {
+        position: absolute;
+        overflow: visible;
+        width: 1538px;
+        height: 219px;
+        left: -65px;
+        top: -59px;
+      }
+      #InTravel_dy {
+        left: 203px;
+        top: 20px;
+        position: absolute;
+        overflow: visible;
+        width: 111px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 27px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Home_dz {
+        left: 539px;
+        top: 22px;
+        position: absolute;
+        overflow: visible;
+        width: 76px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Partner_d {
+        left: 752px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 88px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Tours_d {
+        left: 867px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 69px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #About_d {
+        left: 649px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 76px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #logo {
+        position: absolute;
+        width: 57.029px;
+        height: 41.671px;
+        left: 143px;
+        top: 19.406px;
+        overflow: visible;
+      }
+      #Contact_d {
+        left: 962px;
+        top: 23px;
+        position: absolute;
+        overflow: visible;
+        width: 99px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        color: rgba(255, 255, 255, 1);
+      }
+      #Rectangle_2 {
+        fill: rgba(255, 255, 255, 1);
+      }
+      .button-log:hover #Rectangle_2 {
+        fill: rgb(199, 199, 199);
+        transition: all 0.3s ease-out;
+      }
+      .Rectangle_2 {
+        position: absolute;
+        overflow: visible;
+        width: 116px;
+        height: 40px;
+        left: 1091px;
+        top: 23px;
+      }
+      #Login {
+        left: 1116px;
+        top: 25px;
+        position: absolute;
+        overflow: visible;
+        width: 67px;
+        white-space: nowrap;
+        text-align: left;
+        font-family: Poppins;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 25px;
+        color: rgba(82, 199, 223, 1);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="InTravel">
+      <div class="navbar">
+        <svg class="Rectangle_13">
+          <rect id="Rectangle_13" rx="0" ry="0" x="0" y="0" width="1466" height="147"></rect>
+        </svg>
+        <div class="menu">
+          <div id="InTravel_dy">
+            <span><a href="#Rectangle_1">InTravel</a></span>
+          </div>
+          <div id="Home_dz">
+            <span><a href="#Rectangle_1">Home</a></span>
+          </div>
+          <div id="Partner_d">
+            <span><a href="#Path_2">Partner</a></span>
+          </div>
+          <div id="Tours_d">
+            <span><a href="#Path_3">Tours</a></span>
+          </div>
+          <div id="About_d">
+            <span><a href="#wave">About</a></span>
+          </div>
+          <div id="Contact_d">
+            <span><a href="#Contact">Contact</a></span>
+          </div>
+          <div class="button-log" id="button-log">
+            <svg class="Rectangle_2">
+              <rect id="Rectangle_2" rx="16" ry="16" x="0" y="0" width="116" height="40"></rect>
+            </svg>
+            <div id="Login">
+              <span>Login</span>
+            </div>
+          </div>
+          <img id="logo" src="logo.png" srcset="logo.png 1x, logo@2x.png 2x" />
+        </div>
+      </div>
+      <svg class="Rectangle_1">
+        <rect id="Rectangle_1" rx="0" ry="0" x="0" y="0" width="1368" height="844"></rect>
+      </svg>
+      <div id="Percayakan_Liburanmu_Ke_InTrav">
+        <span>Percayakan<br />Liburanmu Ke</span><span style="font-style: normal; font-weight: bold"> </span><span style="font-style: normal; font-weight: bold">InTravel</span>
+      </div>
+      <div id="Dengan_InTravel_liburanmu_akan">
+        <span>Dengan InTravel liburanmu akan terasa lebih mengesankan<br />dengan berbagai promo yang kami tawarkan</span>
+      </div>
+      <div class="ticket-button">
+        <a href="#Path_3">
+          <svg class="Rectangle_3">
+            <rect id="Rectangle_3" rx="20" ry="20" x="0" y="0" width="212" height="53"></rect>
+          </svg>
+          <div id="Find_Ticket">
+            <span>Find Ticket</span>
+          </div>
+        </a>
+      </div>
+      <img id="uiyt" src="uiyt.png" srcset="uiyt.png 1x, uiyt@2x.png 2x" />
+
+      <img id="khgfhj" src="khgfhj.png" srcset="khgfhj.png 1x, khgfhj@2x.png 2x" />
+
+      <img id="klg" src="klg.png" srcset="klg.png 1x, klg@2x.png 2x" />
+
+      <img id="Human" src="Human.png" srcset="Human.png 1x, Human@2x.png 2x" />
+
+      <img id="iutd" src="iutd.png" srcset="iutd.png 1x, iutd@2x.png 2x" />
+
+      <img id="iutd_q" src="iutd_q.png" srcset="iutd_q.png 1x, iutd_q@2x.png 2x" />
+
+      <svg class="wave" viewBox="0 57.756 1368.707 287.754">
+        <path
+          id="wave"
+          d="M 0 64.60736083984375 L 45.62357711791992 76.34824371337891 C 91.24715423583984 87.65020751953125 182.4943084716797 111.7903289794922 273.7414855957031 105.5358505249023 C 364.9886169433594 99.72027587890625 456.2357788085938 64.60736083984375 547.4829711914062 58.79179000854492 C 638.7301635742188 52.53730010986328 729.9772338867188 76.67742919921875 821.224365234375 76.34824371337891 C 912.4715576171875 76.67742919921875 1003.71875 52.53730010986328 1094.965942382812 58.79179000854492 C 1186.213012695312 64.60736083984375 1277.460327148438 99.72027587890625 1323.083862304688 117.276725769043 L 1368.707397460938 134.8331756591797 L 1368.707397460938 345.5106201171875 L 1323.083862304688 345.5106201171875 C 1277.460327148438 345.5106201171875 1186.213012695312 345.5106201171875 1094.965942382812 345.5106201171875 C 1003.71875 345.5106201171875 912.4715576171875 345.5106201171875 821.224365234375 345.5106201171875 C 729.9772338867188 345.5106201171875 638.7301635742188 345.5106201171875 547.4829711914062 345.5106201171875 C 456.2357788085938 345.5106201171875 364.9886169433594 345.5106201171875 273.7414855957031 345.5106201171875 C 182.4943084716797 345.5106201171875 91.24715423583984 345.5106201171875 45.62357711791992 345.5106201171875 L 0 345.5106201171875 L 0 64.60736083984375 Z"
+        ></path>
+      </svg>
+      <svg class="wave_s" viewBox="0 57.756 1368.707 287.754">
+        <path
+          id="wave_s"
+          d="M 0 64.60736083984375 L 45.62357711791992 76.34824371337891 C 91.24715423583984 87.65020751953125 182.4943084716797 111.7903289794922 273.7414855957031 105.5358505249023 C 364.9886169433594 99.72027587890625 456.2357788085938 64.60736083984375 547.4829711914062 58.79179000854492 C 638.7301635742188 52.53730010986328 729.9772338867188 76.67742919921875 821.224365234375 76.34824371337891 C 912.4715576171875 76.67742919921875 1003.71875 52.53730010986328 1094.965942382812 58.79179000854492 C 1186.213012695312 64.60736083984375 1277.460327148438 99.72027587890625 1323.083862304688 117.276725769043 L 1368.707397460938 134.8331756591797 L 1368.707397460938 345.5106201171875 L 1323.083862304688 345.5106201171875 C 1277.460327148438 345.5106201171875 1186.213012695312 345.5106201171875 1094.965942382812 345.5106201171875 C 1003.71875 345.5106201171875 912.4715576171875 345.5106201171875 821.224365234375 345.5106201171875 C 729.9772338867188 345.5106201171875 638.7301635742188 345.5106201171875 547.4829711914062 345.5106201171875 C 456.2357788085938 345.5106201171875 364.9886169433594 345.5106201171875 273.7414855957031 345.5106201171875 C 182.4943084716797 345.5106201171875 91.24715423583984 345.5106201171875 45.62357711791992 345.5106201171875 L 0 345.5106201171875 L 0 64.60736083984375 Z"
+        ></path>
+      </svg>
+      <div id="About_Us">
+        <span>About Us</span>
+      </div>
+      <div id="Tourist_Attraction">
+        <span>Tourist Attraction</span>
+      </div>
+      <div id="Biro_Perjalanan_Terbaik">
+        <span>Biro Perjalanan Terbaik</span>
+      </div>
+      <div id="Cakupan_Global">
+        <span>Cakupan Global</span>
+      </div>
+      <div id="Harga_Bersaing">
+        <span>Harga Bersaing</span>
+      </div>
+      <div id="Kami_merupakan_agen_travel_yan">
+        <span
+          >Kami merupakan agen travel yang memiliki visi ingin menjadi penyedia layanan travel terbaik se-Indonesia. Dengan kami, jadikan<br />pengalaman liburan anda lebih mengesankan dengan berbagai promo yang kami tawarkan. Kenapa harus
+          pilih InTravel?</span
+        >
+      </div>
+      <img id="ab1" src="ab1.png" srcset="ab1.png 1x, ab1@2x.png 2x" />
+
+      <img id="ab2" src="ab2.png" srcset="ab2.png 1x, ab2@2x.png 2x" />
+
+      <img id="ab3" src="ab3.png" srcset="ab3.png 1x, ab3@2x.png 2x" />
+
+      <div id="Kami_berkeinginan_menjadi_peny">
+        <span>Kami berkeinginan menjadi penyedia layanan travel terbaik<br />se-Indonesia dengan beberapa keunggulan yang kami miliki<br />saat ini</span>
+      </div>
+      <svg class="Path_1" viewBox="0 0 1368.707 542.165">
+        <path id="Path_1" d="M 0 0 L 1368.707397460938 0 L 1368.707397460938 542.1653442382812 L 0 542.1653442382812 L 0 0 Z"></path>
+      </svg>
+      <div id="Terdapat_banyak_atraksi_wisata">
+        <span>Terdapat banyak atraksi wisata, hotel dan hiburan menarik <br />yang dapat kalian saksikan</span>
+      </div>
+      <div id="Nikmati_perjalanan_anda_tanpa_">
+        <span
+          >Nikmati perjalanan anda tanpa kuatir isi dompet<br />
+          akan terkuras habis
+        </span>
+      </div>
+      <div id="Partner_Us">
+        <span>Partner Us</span>
+      </div>
+      <img id="LOGO_BATIK_AIR" src="LOGO_BATIK_AIR.png" srcset="LOGO_BATIK_AIR.png 1x, LOGO_BATIK_AIR@2x.png 2x" />
+
+      <img id="Jetstar_Logosvg" src="Jetstar_Logosvg.png" srcset="Jetstar_Logosvg.png 1x, Jetstar_Logosvg@2x.png 2x" />
+
+      <img id="Logo_Thai_Lion_Air" src="Logo_Thai_Lion_Air.png" srcset="Logo_Thai_Lion_Air.png 1x, Logo_Thai_Lion_Air@2x.png 2x" />
+
+      <img id="n_40px-2012_Citilink_Logosvg" src="n_40px-2012_Citilink_Logosvg.png" srcset="n_40px-2012_Citilink_Logosvg.png 1x, n_40px-2012_Citilink_Logosvg@2x.png 2x" />
+
+      <img id="n_106716434a7e50004330e5b" src="n_106716434a7e50004330e5b.png" srcset="n_106716434a7e50004330e5b.png 1x, n_106716434a7e50004330e5b@2x.png 2x" />
+
+      <img id="logoSJ" src="logoSJ.png" srcset="logoSJ.png 1x, logoSJ@2x.png 2x" />
+
+      <svg class="Line_3" viewBox="0 0 240.235 4">
+        <path id="Line_3" d="M 0 0 L 240.234619140625 0"></path>
+      </svg>
+      <svg class="Line_4" viewBox="0 0 186.228 4">
+        <path id="Line_4" d="M 0 0 L 186.2282104492188 0"></path>
+      </svg>
+      <svg class="Line_5" viewBox="0 0 181.34 4">
+        <path id="Line_5" d="M 0 0 L 181.3404846191406 0"></path>
+      </svg>
+      <div class="card-4">
+        <svg class="Rectangle_4">
+          <rect id="Rectangle_4" rx="23" ry="23" x="0" y="0" width="284" height="371"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce" src="n_1c4194dcf8640629fd223927c0ce.png" srcset="n_1c4194dcf8640629fd223927c0ce.png 1x, n_1c4194dcf8640629fd223927c0ce@2x.png 2x" />
+        <div id="Lembah_Harau">
+          <span>Lembah Harau</span>
+        </div>
+        <div id="n_8">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_800000">
+          <span>Rp. 800.000</span>
+        </div>
+        <div id="More">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-5">
+        <svg class="Rectangle_5">
+          <rect id="Rectangle_5" rx="23" ry="23" x="0" y="0" width="284" height="371"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_bn" src="n_1c4194dcf8640629fd223927c0ce_bn.png" srcset="n_1c4194dcf8640629fd223927c0ce_bn.png 1x, n_1c4194dcf8640629fd223927c0ce_bn@2x.png 2x" />
+        <div id="Pulau_Komodo">
+          <span>Pulau Komodo</span>
+        </div>
+        <div id="n_8_bz">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_1000000">
+          <span>Rp. 1.000.000</span>
+        </div>
+        <div id="More_cb">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_ch" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_ch"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_co" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_co"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-6">
+        <svg class="Rectangle_6">
+          <rect id="Rectangle_6" rx="23" ry="23" x="0" y="0" width="285" height="371"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_bo" src="n_1c4194dcf8640629fd223927c0ce_bo.png" srcset="n_1c4194dcf8640629fd223927c0ce_bo.png 1x, n_1c4194dcf8640629fd223927c0ce_bo@2x.png 2x" />
+        <div id="Danau_Toba">
+          <span>Danau Toba</span>
+        </div>
+        <div id="n_8_b">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_600000">
+          <span>Rp. 600.000</span>
+        </div>
+        <div id="More_cc">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_ci" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_ci"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_cp" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_cp"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-7">
+        <svg class="Rectangle_7">
+          <rect id="Rectangle_7" rx="23" ry="23" x="0" y="0" width="285" height="371"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_dj" src="n_1c4194dcf8640629fd223927c0ce_dj.png" srcset="n_1c4194dcf8640629fd223927c0ce_dj.png 1x, n_1c4194dcf8640629fd223927c0ce_dj@2x.png 2x" />
+        <div id="Pantai_Ora">
+          <span>Pantai Ora</span>
+        </div>
+        <div id="n_8_dn">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_700000_dp">
+          <span>Rp. 700.000</span>
+        </div>
+        <div id="More_dr">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_dt" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_dt"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_dv" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_dv"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-8">
+        <svg class="Rectangle_8">
+          <rect id="Rectangle_8" rx="23" ry="23" x="0" y="0" width="285" height="370"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_dk" src="n_1c4194dcf8640629fd223927c0ce_dk.png" srcset="n_1c4194dcf8640629fd223927c0ce_dk.png 1x, n_1c4194dcf8640629fd223927c0ce_dk@2x.png 2x" />
+        <div id="Raja_Ampat">
+          <span>Raja Ampat</span>
+        </div>
+        <div id="n_8_do">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_1000000_dq">
+          <span>Rp. 1.000.000</span>
+        </div>
+        <div id="More_ds">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_du" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_du"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_dw" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_dw"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-9">
+        <svg class="Rectangle_9">
+          <rect id="Rectangle_9" rx="23" ry="23" x="0" y="0" width="285" height="370"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_bp" src="n_1c4194dcf8640629fd223927c0ce_bp.png" srcset="n_1c4194dcf8640629fd223927c0ce_bp.png 1x, n_1c4194dcf8640629fd223927c0ce_bp@2x.png 2x" />
+        <div id="Candi_Borobudur">
+          <span>Candi Borobudur</span>
+        </div>
+        <div id="n_8_ca">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_900000">
+          <span>Rp. 900.000</span>
+        </div>
+        <div id="More_cd">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_cj" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_cj"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_cq" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_cq"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-10">
+        <svg class="Rectangle_10">
+          <rect id="Rectangle_10" rx="23" ry="23" x="0" y="0" width="284" height="370"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_bq" src="n_1c4194dcf8640629fd223927c0ce_bq.png" srcset="n_1c4194dcf8640629fd223927c0ce_bq.png 1x, n_1c4194dcf8640629fd223927c0ce_bq@2x.png 2x" />
+        <div id="Pulau_Cubadak">
+          <span>Pulau Cubadak</span>
+        </div>
+        <div id="n_8_cb">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_600000_b">
+          <span>Rp. 600.000</span>
+        </div>
+        <div id="More_ce">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_ck" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_ck"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_cr" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_cr"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+      <div class="card-11">
+        <svg class="Rectangle_11">
+          <rect id="Rectangle_11" rx="23" ry="23" x="0" y="0" width="284" height="370"></rect>
+        </svg>
+        <img id="n_1c4194dcf8640629fd223927c0ce_br" src="n_1c4194dcf8640629fd223927c0ce_br.png" srcset="n_1c4194dcf8640629fd223927c0ce_br.png 1x, n_1c4194dcf8640629fd223927c0ce_br@2x.png 2x" />
+        <div id="Pantai_Tanjung_Tinggi">
+          <span>Pantai Tanjung Tinggi</span>
+        </div>
+        <div id="n_8_cc">
+          <span>4.8</span>
+        </div>
+        <div id="Rp_700000">
+          <span>Rp. 700.000</span>
+        </div>
+        <div id="More_cf">
+          <span>More</span>
+        </div>
+        <svg class="Icon_awesome-star_cl" viewBox="1.441 -0.001 19.658 18.815">
+          <path
+            id="Icon_awesome-star_cl"
+            d="M 10.21571350097656 0.6536068320274353 L 7.816368579864502 5.518432140350342 L 2.448159217834473 6.301066398620605 C 1.485482335090637 6.440690994262695 1.099676847457886 7.627503395080566 1.79780113697052 8.307255744934082 L 5.681577205657959 12.09182548522949 L 4.762992382049561 17.43798828125 C 4.597647666931152 18.40433883666992 5.615439414978027 19.12818336486816 6.467885971069336 18.67624092102051 L 11.27024841308594 16.15196800231934 L 16.07260894775391 18.67624092102051 C 16.92505645751953 19.12450790405273 17.94284820556641 18.40433692932129 17.77750205993652 17.43798828125 L 16.85891914367676 12.09182548522949 L 20.7426929473877 8.307254791259766 C 21.44081878662109 7.62750244140625 21.05501365661621 6.440690994262695 20.09233665466309 6.301065921783447 L 14.7241268157959 5.518432140350342 L 12.32478332519531 0.6536068320274353 C 11.89488506317139 -0.213537186384201 10.6492862701416 -0.2245602607727051 10.21571350097656 0.6536068320274353 Z"
+          ></path>
+        </svg>
+        <svg class="Icon_awesome-arrow-right_cs" viewBox="0 2.647 15.904 15.501">
+          <path
+            id="Icon_awesome-arrow-right_cs"
+            d="M 6.761812210083008 3.68549633026123 L 7.549803733825684 2.89750599861145 C 7.883456707000732 2.563851833343506 8.422981262207031 2.563851833343506 8.753087043762207 2.89750599861145 L 15.65332984924316 9.79419994354248 C 15.98698329925537 10.127854347229 15.98698329925537 10.66737842559814 15.65332984924316 10.997483253479 L 8.753085136413574 17.89772605895996 C 8.419431686401367 18.23138046264648 7.879907131195068 18.23138046264648 7.549802780151367 17.89772605895996 L 6.761812210083008 17.1097354888916 C 6.424608707427979 16.77253150939941 6.431707859039307 16.22235870361328 6.776010513305664 15.89225578308105 L 11.05316734313965 11.81741905212402 L 0.8518819212913513 11.81741905212402 C 0.3797973394393921 11.81741905212402 0 11.43762111663818 0 10.96553707122803 L 0 9.829694747924805 C 0 9.357609748840332 0.3797973394393921 8.977813720703125 0.8518819212913513 8.977813720703125 L 11.05316734313965 8.977813720703125 L 6.776010513305664 4.902977466583252 C 6.428159236907959 4.572873115539551 6.421059131622314 4.02269983291626 6.761812210083008 3.68549633026123 Z"
+          ></path>
+        </svg>
+      </div>
+
+      <svg class="Icon_ionic-ios-arrow-forward" viewBox="11.246 6.196 10.584 18.511">
+        <path
+          id="Icon_ionic-ios-arrow-forward"
+          d="M 18.63996315002441 15.44847393035889 L 11.63503456115723 8.449055671691895 C 11.11696815490723 7.930988311767578 11.11696815490723 7.093262672424316 11.63503456115723 6.580706596374512 C 12.15310287475586 6.068150997161865 12.9908275604248 6.068150997161865 13.50889587402344 6.580706596374512 L 21.44524383544922 14.51154232025146 C 21.94677543640137 15.01307582855225 21.95779800415039 15.81773376464844 21.48382377624512 16.33580207824707 L 13.51440715789795 24.32175445556641 C 13.25537395477295 24.58078765869141 12.91366958618164 24.70754814147949 12.57747554779053 24.70754814147949 C 12.24128532409668 24.70754814147949 11.89958095550537 24.58078765869141 11.64054584503174 24.32175445556641 C 11.12247943878174 23.80368614196777 11.12247943878174 22.9659595489502 11.64054584503174 22.45340347290039 L 18.63996315002441 15.44847393035889 Z"
+        ></path>
+      </svg>
+
+      <svg class="Rectangle_3_ct">
+        <rect id="Rectangle_3_ct" rx="20" ry="20" x="0" y="0" width="212" height="55"></rect>
+      </svg>
+      <div id="View_All">
+        <span>View All</span>
+      </div>
+      <svg class="Rectangle_12">
+        <rect id="Rectangle_12" rx="0" ry="0" x="0" y="0" width="1368" height="270"></rect>
+      </svg>
+      <div id="InTravel_cw">
+        <span>InTravel</span>
+      </div>
+      <div id="Contact">
+        <span>Contact</span>
+      </div>
+      <div id="Social">
+        <span>Social</span>
+      </div>
+      <div id="Home">
+        <span>Home</span>
+      </div>
+      <div id="intravelofficialgmailcom_Jl_KH">
+        <span>intravelofficial@gmail.com<br />Jl. KH. Hasyim Asy'ari<br />Lamongan Jawa Timur<br />Kode Pos : 62257</span>
+      </div>
+      <div id="Facebook__InTravel_Twitter____">
+        <span>Facebook : InTravel<br />Twitter : InTravel<br />Instagram : intravel.official<br />Youtube : intravel official</span>
+      </div>
+      <div id="About">
+        <span>About</span>
+      </div>
+      <div id="Partner">
+        <span>Partner</span>
+      </div>
+      <div id="Tours">
+        <span>Tours</span>
+      </div>
+      <div id="Contact_c">
+        <span>Contact</span>
+      </div>
+      <div id="n_2023_InTravel_All_rights_Res"><span>© 2023. </span><span style="color: rgba(82, 199, 223, 1)">InTravel</span><span>. All rights Reserved.</span></div>
+      <svg class="Path_2" viewBox="0 0 1368.707 17.556">
+        <path id="Path_2" d="M 0 0 L 1368.707397460938 0 L 1368.707397460938 17.55612564086914 L 0 17.55612564086914 L 0 0 Z"></path>
+      </svg>
+      <svg class="Path_3" viewBox="0 0 1368.707 23.972">
+        <path id="Path_3" d="M 0 0 L 1368.707397460938 0 L 1368.707397460938 23.97211456298828 L 0 23.97211456298828 L 0 0 Z"></path>
+      </svg>
+      <img id="pesawat" src="pesawat.png" srcset="pesawat.png 1x, pesawat@2x.png 2x" />
+
+      <img id="Untitled-1" src="Untitled-1.png" srcset="Untitled-1.png 1x, Untitled-1@2x.png 2x" />
+
+      <img id="sss" src="sss.png" srcset="sss.png 1x, sss@2x.png 2x" />
+
+      <img id="klg_dc" src="klg_dc.png" srcset="klg_dc.png 1x, klg_dc@2x.png 2x" />
+
+      <img id="uiyt_dd" src="uiyt_dd.png" srcset="uiyt_dd.png 1x, uiyt_dd@2x.png 2x" />
+
+      <img id="khgfhj_de" src="khgfhj_de.png" srcset="khgfhj_de.png 1x, khgfhj_de@2x.png 2x" />
+
+      <img id="n_560px-Logo_PT_Kereta_Api_Ind" src="n_560px-Logo_PT_Kereta_Api_Ind.png" srcset="n_560px-Logo_PT_Kereta_Api_Ind.png 1x, n_560px-Logo_PT_Kereta_Api_Ind@2x.png 2x" />
+
+      <img id="Garuda_Indonesia" src="Garuda_Indonesia.png" srcset="Garuda_Indonesia.png 1x, Garuda_Indonesia@2x.png 2x" />
+    </div>
+    <script>
+      const login_button = document.getElementById("button-log");
+
+      login_button.addEventListener("click", function () {
+        alert("Halaman ini sedang dalam masa pengembangan, coba lagi nanti..");
+      });
+    </script>
+  </body>
+</html>
